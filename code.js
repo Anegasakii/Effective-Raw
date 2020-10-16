@@ -4,7 +4,7 @@ function update(){
     const chance = document.getElementById("chance").value;
 
     document.getElementById("currentBase").innerHTML = base;
-    document.getElementById("currentBonus").innerHTML = multi;
+    document.getElementById("currentBonus").innerHTML = `${multi}x`;
     document.getElementById("currentChance").innerHTML = `${Math.round(chance*10000)/100}%`;
 
     const effRaw = Math.round(base * ((multi - 1) * chance + 1))
