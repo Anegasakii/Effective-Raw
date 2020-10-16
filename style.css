@@ -11,13 +11,6 @@ html, body {
 	font-family: sans-serif;
 }
 
-@keyframes lighten {
-	100% {
-		color: var(--darker);
-		background-color: var(--lighter);
-	}
-}
-
 @keyframes darken {
 	100% {
 		color: white;
