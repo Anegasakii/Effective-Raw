@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Anegasaki - Notion Tables</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8" />
+</head>
+
+<body>
+	<p class="explain">Effective Damage is a way of concretely seeing the actual benefits of a chance to do more damage. I'm lazy, so I made a thing I can bookmark to calculate it for me.
+		<br>Equation: Base * ((Multiplier - 1) * Chance + 1)</p>
+	<div class="main">
+		<label for="base">Base</label>
+		<input type="number" min="1" id="base" name="base">
+		<label for="multiplier">Multiplier</label>
+		<input type="number" min="1" step="0.01" id="multiplier" name="multiplier">
+		<label for="chance">Chance</label>
+		<input type="number" min="0" max="1" step="0.0001" id="chance" name="chance">
+	</div>
+	<div class="main">
+		<label for="currentBase">Base Damage:</label>
+		<p class="current" id="currentBase">10</p>
+		<label for="currentBonus">Bonus Multiplier:</label>
+		<p class="current" id="currentBonus">10</p>
+		<label for="currentChance">Bonus Chance:</label>
+		<p class="current" id="currentChance">1</p>
+		<button onclick="update()">Refresh</button>
+	</div>
+	<div class="result">
+		<label class="big" for="effectiveRaw">Effective Damage:</label>
+		<p class="big" id="effectiveRaw">100</p>
+	</div>
+	<br>
+	<a href="https://github.com/Anegasakii/Effective-Raw">Repo</a>
+	<a href="https://anegasakii.github.io/">Website</a>
+</body>
+<script src="code.js"></script>
+</html>
+
