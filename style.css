@@ -1,15 +1,4 @@
-:root {
-	--main: #4995fa;
-	--darker: #2238A5;
-	--lighter: #A8CFFF;
-}
-
-html, body {
-	margin: 0;
-	padding: 0;
-	background-color: var(--lighter);
-	font-family: sans-serif;
-}
+@import url(https://anegasakii.github.io/base.css);
 
 @keyframes darken {
 	100% {
@@ -30,7 +19,7 @@ html, body {
 	background-color: var(--darker);
 	color: white;
 	padding: 15px 10px 10px 10px;
-	margin: 30px 30px 20px 30px;
+	margin: 30px;
 	border-radius: 10px;
 	overflow:auto;
 }
