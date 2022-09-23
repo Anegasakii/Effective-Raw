@@ -1,5 +1,5 @@
 @import url(https://anegasakii.github.io/base.css);
-
+body { margin: 1%; }
 @keyframes highlight {
 	100% {
 		box-shadow: 0px 0px 5px white;
@@ -11,53 +11,23 @@
 	background-color: var(--darker);
 	color: white;
 	padding: 15px 10px 10px 10px;
-	margin: 30px;
-	border-radius: 10px;
+	margin-top: 1%;
+	border-radius: 5px;
 	overflow:auto;
-}
-
-div:hover {
-	animation-name: highlight;
-	animation-fill-mode: forwards;
-	animation-duration: 0.25s;
 }
 
 div {
 	display: inline-block;
 	vertical-align: top;
-	background-color: var(--main);
+	border: 3px solid var(--main);
 	padding: 10px;
-	margin-left: 40px;
+	margin-left: 2%;
 	border-radius: 5px;
 	color: var(--darker);
-}
-
-button {
-	background-color: var(--lighter);
-	border-radius: 5px;
-	color: var(--darker);
-	font-size: 120%;
-	padding: 5px 10px;
-	border: none;
-	cursor: pointer;
-}
-
-button:hover {
-	animation-name: darken;
-	animation-fill-mode: forwards;
-	animation-duration: 0.25s;
 }
 
 .result {
-	background-color: white;
-}
-
-.links {
-	display: inline-block;
-	background-color: transparent;
-	margin-left: 10px;
-	padding: 0px;
-	box-shadow: none;
+	background-color: var(--darker);
 }
 
 label {
@@ -72,7 +42,6 @@ label {
 
 .current {
 	margin: 10px;
-	font-weight:bold;
 	color: white;
 }
 
@@ -81,17 +50,18 @@ label {
 	margin: 5px;
 	font-weight:bolder;
 	font-size: 200%;
+	color: white;
 }
 
-p.big {
-	color: var(--darker);
-}
+label.big { background-color: var(--main); }
 
 input {
 	background-color: white;
 	color: var(--darker);
-	border-radius: 5px;
 	padding: 5px;
 	margin: 5px;
 	width: 100px;
+	border: none;
 }
+
+footer { margin-top: 1%; }
